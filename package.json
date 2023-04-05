@@ -1,0 +1,26 @@
+{
+  "name": "a02package",
+  "version": "1.0.0",
+  "description": "PackageforAssignment02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-karthike-05.git"
+  },
+  "keywords": [
+    "a02",
+    "galosh",
+    "minimist",
+    "node-fetch",
+    "moment-timezone"
+  ],
+  "author": "karthike-05",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-karthike-05/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-karthike-05#readme"
+}
