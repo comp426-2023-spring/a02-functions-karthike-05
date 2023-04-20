@@ -8,6 +8,8 @@ import process from 'process';
 
 //obtain timezone
 const timezone = moment.tz.guess()
+
+//obtain inputs
 const input = minimist(process.argv.slice(2))
 
 //error messages
@@ -21,5 +23,30 @@ if (const.h) {
     console.log("-j            Echo pretty JSON from open-meteo API and exit.");
     process.exit(0);
 }
+
+var latitude = (-1) * input.w || input.e;
+var longitude = (-1) * input.s || input.n;
+
+var url = "https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude +  "&timezone=" + timezone + "&daily=precipitation_hours";
+const api_resp = await fetch(url)
+const return_data = await api_resp.json();
+
+if (input.j) {
+    console.log(data);
+    process.exit(0);
+}
+
+var days = input.d
+var rain = data.return_data.dailyprecipitation_hours[days];
+
+if (rain > 0) {
+    process.stdout.write("You might need your galoshes");
+}
+else{
+    process.stdout.write("You will not need your galoshes");
+}
+
+
+
 
 
