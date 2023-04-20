@@ -37,7 +37,7 @@ if (input.j) {
 }
 
 var days = input.d;
-var rain = return_data.dailyprecipitation_hours[days];
+var rain = return_data.daily.precipitation_hours[days];
 
 if (rain > 0) {
     process.stdout.write("You might need your galoshes");
