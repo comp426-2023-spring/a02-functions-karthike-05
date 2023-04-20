@@ -40,10 +40,10 @@ var days = input.d;
 var rain = return_data.daily.precipitation_hours[days];
 
 if (rain > 0) {
-    process.stdout.write("You might need your galoshes");
+    process.stdout.write("You might need your galoshes ");
 }
 else{
-    process.stdout.write("You will not need your galoshes");
+    process.stdout.write("You will not need your galoshes ");
 }
 
 if(days == 0) {
