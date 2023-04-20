@@ -8,7 +8,7 @@
   },
   "bin": {
     "galosh.js": "./cli.js"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-karthike-05.git"
@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a02-functions-karthike-05/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a02-functions-karthike-05#readme"
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-karthike-05#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.43",
+    "node-fetch": "^3.3.1"
+  }
 }
