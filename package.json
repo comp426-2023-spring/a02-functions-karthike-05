@@ -4,8 +4,10 @@
   "description": "PackageforAssignment02",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
+  "bin": {
+    "galosh.js": "./cli.js"
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-karthike-05.git"
