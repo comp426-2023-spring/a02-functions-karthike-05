@@ -25,7 +25,10 @@ if (input.h) {
 }
 
 var latitude = (-1) * input.w || input.e;
+latitude = Number(latitude).toFixed(2); //Convert to float by fixing decimal places
 var longitude = (-1) * input.s || input.n;
+longitude = Number(longitude).toFixed(2); //Convert to float by fixing decimal places
+
 
 var url = "https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude +  "&timezone=" + timezone + "&daily=precipitation_hours";
 const api_resp = await fetch(url)
