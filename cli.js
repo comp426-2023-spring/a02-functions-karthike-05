@@ -36,7 +36,7 @@ if (input.j) {
     process.exit(0);
 }
 
-var days = input.d
+var days = input.d;
 var rain = return_data.dailyprecipitation_hours[days];
 
 if (rain > 0) {
