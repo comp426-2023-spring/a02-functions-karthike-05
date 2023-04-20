@@ -32,7 +32,7 @@ const api_resp = await fetch(url)
 const return_data = await api_resp.json();
 
 if (input.j) {
-    console.log(data);
+    console.log(return_data);
     process.exit(0);
 }
 
