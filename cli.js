@@ -13,7 +13,7 @@ const timezone = moment.tz.guess()
 const input = minimist(process.argv.slice(2))
 
 //error messages
-if (const.h) {
+if (input.h) {
     console.log( "Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE");
     console.log("-h            Show this help message and exit.");
     console.log("-n, -s        Latitude: N positive; S negative.");
