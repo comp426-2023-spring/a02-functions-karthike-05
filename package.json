@@ -8,6 +8,7 @@
   },
   "bin": {
     "galosh.js": "./cli.js"
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-karthike-05.git"
